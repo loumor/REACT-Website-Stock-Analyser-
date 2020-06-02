@@ -1,0 +1,290 @@
+/* CSS FOR ALL PAGES */
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+footer {
+  background: #222;
+  padding: 40px;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+/* NAV BAR CSS */
+
+nav ul li {
+  display: inline-block;
+}
+
+nav {
+  width: 95%; 
+  display: inline-block;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+nav ul li a:hover {
+  background: #444;
+}
+
+.logoutButton { 
+  float: right; 
+}
+
+
+/* Icon */
+
+#icon {
+  display: inline-block;
+  color: #fff;
+}
+
+#icon img {
+  width: 50px;
+  border-radius: 10px;
+  margin-left: -40px;
+  vertical-align: middle;
+}
+
+/* HOME PAGE CSS */ 
+
+.heroImage{
+  min-height: 100;
+  text-align: center;
+  background-image: url("/img/wallstreet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero__image{
+  padding-top: 300px;
+}
+
+.intro__title {
+  font-size: 100px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.intro__subtitle {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.intro{
+  text-align: center;
+}
+
+.intro__content{
+  color: #222;
+  padding-top: 10px;
+}
+
+.features {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features__header h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+
+.features__box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__box {
+  text-align: center;
+  flex: 1;
+  margin-left: 0px;
+}
+
+.features__box img {
+  margin-bottom: 12px;
+  width: 80px;
+}
+
+.features__box li {
+  display: block;
+  padding: 10px;
+  border-radius: 60px;
+  transition: 0.3s ease all;
+  font-size: 20px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.features__box li:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px){
+  .features__box-wrapper{
+    flex-wrap: wrap;
+  }
+  .features__box{
+    flex: 1 100%;
+  }
+}
+
+/* STOCKS PAGE CSS */
+
+.radioList {
+  margin: 0px;
+  width: 30%;
+  display: inline-block;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.radioList input[type="radio"]:focus + label {
+  border: 2px dashed #444;
+  margin: 10px;
+}
+
+.radioList label {
+  margin: 10px;
+  display: inline-block;
+  background-color: #ddd;
+  padding: 5px 5px;
+  font-family: sans-serif, Arial;
+  font-size: 12px;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+.radioList input[type="radio"]:checked + label {
+  background-color: #bfb;
+  border-color: #4c4;
+}
+
+
+.userFunctions_wrapper{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.ag-theme-balham{
+  height: 300px;
+  width: 600px;
+  display: inline-block;
+}
+
+.buttonsBottom {
+  margin: 0 auto;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* QUOTES PAGE CSS  */ 
+
+.containerQuotes{
+  display: inline-block;
+}
+
+.searchSection{
+  padding: 1em;
+  margin: 0;
+}
+
+.qutoespageButton{
+  position: relative;
+  left: 10px;
+}
+
+/* PRICE HISTORY PAGE CSS */ 
+
+.notLoggedIn{
+  padding: 50px;
+}
+
+.containerPriceHistory{
+  display: inline-block;
+}
+
+.searchSectionPriceHistory{
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.graphingArea{
+  display: flex;
+}
+
+.graphStock{
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.volumeGraph{
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.startDataSelector{
+  display: inline-block;
+  padding: 20px;
+}
+.ag-header-cell-label {
+  justify-content: center;
+}
+
+.titleVolume{
+  position: relative;
+  left: 20px;
+}
+
+
