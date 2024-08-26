@@ -9,7 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@trendmicro/react-modal": "^3.1.0",
-    "ag-grid-community": "^23.0.2",
+    "ag-grid-community": "^31.3.4",
     "ag-grid-react": "^23.0.3",
     "bootstrap": "^4.4.1",
     "react": "16.12.0",
